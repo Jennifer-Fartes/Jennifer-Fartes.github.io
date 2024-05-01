@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo sobre HTML</title>
+    <link rel="shortcut icon" href="favicon.html.ico"image/x-icon">
+</head>
+<body>
+    <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1><hr/>
+    <h2>Indice</h2>
+    <ul>
+        <li><a href="#Entendendo_a_comunicacao_Client_x_Server">Entendendo a comunicação Client x Server</a></li>
+         <li><a href="#Introducao_ao_Html">Introdução ao HTML na prática</a></li>
+         <li><a href="#Estrutura_do_Html">Estrutura do HTML e funções das tags</a></li>
+         <li><a href="#Corpo_do_documento">Corpo do documento e tags de título e parágrafos</a>
+         <li><a href="#Tags">Tags de marcação, diminuição do texto, itálico, sublinhação e destaque.</a></li>
+         <li><a href="#Listas">Listas ordenadas e não ordenadas</a></li>
+         <li><a href="#Tags_a_hr_sub_sup_blockquote_font_dell_abbr">Tags "a", "hr", "sub", "sup", "blockquote", "font", "dell" e "abbr".</a></li>
+
+    </ul>
+       
+        <h2 id="Entendendo_a_comunicacao_Client_x_Server">Entendendo a comunicação Client x Server </h2>
+        <small><a href="#inicio">>>Voltar</a></small>
+             <p>Neste módulo aprendi a diferença entre o <u>cliente</u>, no qual consiste em fazer requisições de serviços ou informações de outro dispositivo (servidor) e, o <u>servidor</u> que consiste em fornecer essas informações para os clientes.Em resumo, o cliente é quem solicita e o servidor é quem fornece os recursos ou serviços solicitados pelo cliente. Essa distinção é fundamental em arquiteturas de rede cliente-servidor, onde os clientes dependem dos servidores para obter os recursos necessários para realizar suas tarefas.</p>
+        <h2 id="#Introducao_ao_Html">Introdução ao Html na prática</h2>
+        <small><a href="#inicio">>>Voltar</a></small>
+        <p>Este módulo apresentará na prática como é um documento HTML e o que ele precisa para realmente ser um documento HTML.Além disso o módulo contará com a explicação de tags e suas respectivas funções de modo a melhorar a compreensão do desenvolvedor. </p>
+        <h2 id="#Estrutura_do_Html">Estrutura do HTML e funções das tags.</h2>
+        <small><a href="#inicio">>>Voltar</a></small>
+            <p>Esse módulo começa com a explicação da estrutura básica do HTML5 que consiste em 
+                <pre>
+                 <code>
+                    <strong>
+                        < !DOCTYPE html>
+                        < html lang="pt-br"> 
+                        < head>
+                        < meta charset="UTF-8">
+                        < meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        < title>Exibe o título da página< /title>
+                        < /head>
+                        < body> < /body>
+                        < /html>
+                    </strong>
+                </code>
+            </pre>
+            </p><br>
+          
+            <p>
+             A tag< !DOCTYPE html>  mostra que é um HTML5 a versão mais recente do documento.<br><br>
+            A tag< html> < /html> mostra que é um documento html, então tudo que estiver dentro dessa tag vai ser um Doc. escrito em HTML.<br><br>
+            A tag < head>  < /head> consiste na cabeça do documeto, essa tag exibe informações que não são visíveis para o usuário.<br><br>
+            <h2 id="Corpo_do_documento">Corpo do documento e tags de título e parágrafos</h2>
+
+            <small><a href="#inicio">>>Voltar</a></small><br><br>
+           A tag < body> < /body> é o corpo do documento, todo o conteúdo que é exibido para o usuário fica dentro dessa tag, aqui podem ser inseridos elementos como textos, imagens,links, listas, formulários. Para inserir um texto que tenha um título ultiliza-se as tags  do h1 ao h6 que geralmente possuem parágrafos e vão ser utilizadas na seguinte sequência:<br><br>
+          
+           < h1> < /h1>Exibe o título principal da página<i> (título mais importante na página). Deve ser utilizado apenas uma vez por página.</i><br><br>
+           < h2> < /h2>São os títulos de segundo nível <i>(usado para exibir subseções/subtítulos importantes da página). Pode ter vários em uma página desde que seja usado de forma lógica.</i><br><br>
+           < h3> < /h3>Utilizado para subdividir seções dentro dos h2s<i>(Organizam o conteúdo em seções menores e mais específicas)</i> <br><br>
+           < h4> < /h4>Muito parecído com o h3, <i>porém é utilizado para subseções dentro do h3 de forma cada vez mais específica.</i> <br><br>
+           < h5> < /h5>Utilizada para subseções dentro do h4 <i>(utilizada com menos frequência)</i>.<br><br>
+           < h6> < /h6>É o nível mais baixo de título <i>(É também o menos comum e é utilizado para subseções muito específicas dentro do h5)</i><br><br>
+           Ainda dentro da tag < body> < /body> é possível inserir uma tag que cria parágrafos, denominada como < p> < /p>. Essa tag pode ser usada abaixo de uma das tags de títulos depois da abertura e fechamento. <br><br>Exemplo:
+           <pre>
+            <code>
+                <strong>
+                    
+                        < h1>Forma correta de utilizar a tag p < /h1>
+                        < p>Isso é um parágrafo < /p>
+                 </strong>
+            </code>
+           </pre>
+
+           </p><br>
+           <h2 id="Tags">Tags de marcação, diminuição do texto, itálico, sublinhação e destaque. </h2>
+           <small><a href="#inicio">>>Voltar</a></small>
+           <p> A tag < mark> < /mark> é utilizada para marcar um texto de amarelo, para que essa cor seja alterada é ssó manipulá-la através do CSS. Essa manipulação pode ser realizada através do HTML,porém não é uma boa prática de programação por deixar o código "confuso".
+            <br><br><br>Exemplo: 
+            <pre>
+                <code>
+                    <p><mark>Essa frase é marcada de amarelo.</mark> E tudo que está fora não é marcado.</p>
+
+                </code>
+            </pre>
+          </p><br>
+          <p>
+            A tag < small> < /small> <small>deixa o texto menor do que a formatação padrão do navegador,dessa forma tudo que estiver entre ela estará menor</small>, notou a diferença?<br><br>
+            < i> < /i> É a tag responsável por deixar o texto em itálico, dessa forma tudo que estiver entre ela será modificado. <i>Como esse exemplo.</i><br><br>
+            < u> < /u> É utilizada para sublinhar o texto. <u>Isso é um texto sublinhado.</u><br><br>
+            < strong> < /strong> Essa tag geralmente é utilizada para deixar uma palavra ou texto em negrito. <strong> De forma a dar um maior destaque ao texto, como agora.</strong><br><br>
+            
+            <h2 id="Listas">Listas ordenadas e não ordenadas</h2>
+            <small><a href="#inicio">>>Voltar</a></small>
+            <p>
+                Dentro do HTML é possível utilizar listas ordenadas < ol> < /ol> (São usadas para criar listas com uma ordem numérica ou alfabética) e não ordenadas < ul> < /ul> (Cria listas onde a ordem dos itens não é importante. Cada item é marcado com um marcador padrão (geralmente um ponto)).<br><br>
+                Exemplo de listas ordenadas:<br><br>
+                Comando da lista:
+            </p><br><br>
+        
+            <pre>
+                <code>
+                    <strong>
+                        < ol>
+                            < li>Item 1< /li>
+                            < li>Item 2< /li>
+                            < li>Item 3< /li>
+                          < /ol>
+                    </strong>
+Exemplo de como fica:
+                     <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                      </ol>
+                      
+                </code>
+            </pre>
+            Exemplo de listas não ordenadas:<br><br>
+            Comando da lista:<br><br>
+        
+            <pre>
+                <code>
+                    <strong>
+                        < ul>
+                            < li>Item 1< /li>
+                            < li>Item 2< /li>
+                            < li>Item 3< /li>
+                          < /ul>
+                    </strong>
+Exemplo de como fica:
+                     <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                      </ul>
+                      
+                </code>
+            </pre>
+            </p><br>
+        <h2 id="#Tags_a_hr_sub_sup_blockquote_font_dell_abbr">Tags "a", "hr", "sub", "sup", "blockquote", "font", "dell" e "abbr".</h2>
+        <small><a href="#inicio">>>Voltar</a></small><br><br>
+        <p>
+            < a >: Esta tag é usada para criar links em HTML.Exemplo do código abaixo:<br><br>
+            <pre>
+                <code><strong>< a href="https://www.dio.me/">Visite dio.com< /a></strong></code>
+            </pre>
+            Agora clique no link do exemplo: <a href="https://www.dio.me/">Visite dio.com</a><br> 
+        </p><br>
+            
+        <p>< hr>: Essa tag é usada para criar uma linha horizontal, muitas vezes usada para separar conteúdos.<br>Exemplo: 
+            <pre>
+                <code>
+                    <strong>
+                        < p>Conteúdo acima< /p>
+                        < hr>
+                        < p>Conteúdo abaixo< /p>
+                        < /code>
+                    </strong>
+            </pre>
+        </p><br> 
+         <p>Agora a demonstração de como ficaria:
+                <p>Conteúdo acima</p>
+                <hr>
+                <p>Conteúdo abaixo</p>
+        </p><br>
+        <p> 
+            < sub> Essa tag é usada para criar texto subscrito, que aparece menor e abaixo da linha de base normal do texto. Por exemplo, para expressar fórmulas químicas:
+            <pre>
+                <code>
+                    <strong>H< sub>2< /sub>O</strong>
+                </code>
+            </pre>
+            Agora a demonstração de como ficaria:<br>
+            H<sub>2</sub>O
+        </p><br> 
+        <p>
+            < sup >: Essa tag é usada para criar texto sobrescrito, que aparece menor e acima da linha de base normal do texto. Por exemplo, para expressar expoentes:
+                <pre>
+                    <code>
+                        <strong>x< sup>2< /sup></strong><br>
+                        <i>*Lembre-se de que não precisa dar esses espaços nas tags,só está assim para aparecer o exemplo do código na página</i>
+
+                    </code>
+                </pre><br>
+                Agora a demonstração de como ficaria:<br>
+                x<sup>2</sup>
+        </p><br>
+        <p>
+            < blockquote >: Essa tag é usada para criar citações longas em um bloco de texto. Por exemplo:
+            <pre>
+                <code>
+                    <strong>
+                        < blockquote >
+                            < p >Esta é uma citação longa. Ela pode se estender por vários parágrafos.< /p >
+                            < p > - Autor da Citação< /p >
+                          < /blockquote >
+                        
+                    </strong>
+                 </code>
+            </pre>
+            Agora a demonstração de como ficaria:<br>
+            <blockquote>
+                <p>Esta é uma citação longa. Ela pode se estender por vários parágrafos.</p>
+                <p> - Autor da Citação</p>
+              </blockquote>
+              
+        </p><br>
+        <p>
+            < font >: Esta tag é usada para definir as características da fonte para o texto contido nela. No entanto, <strong><u>é considerada obsoleta e não é recomendada para uso no desenvolvimento web moderno. </u></strong>
+        </p><br>
+        <p>
+            < del >: Esta tag é usada para indicar texto deletado ou removido dentro de um documento.<br><br>
+            Demonstração do código:<br>
+            <pre>
+                <code>
+                    <strong>< p >Eu removi < del >algum texto< /del > deste parágrafo.< /p ></strong>
+                </code>
+            </pre> 
+            Como fica:
+            <p>Eu removi <del>algum texto</del> deste parágrafo.</p>
+
+        </p><br>
+        <p>
+            < abbr >: Esta tag é usada para definir uma abreviação ou um acrônimo. Geralmente é usada para fornecer uma explicação ou expansão do texto abreviado, que pode ser exibida como uma dica de ferramenta quando o usuário passa o mouse sobre a abreviação.<br>
+            Demonstração do código:
+            <pre>
+                <code>
+                    <strong>< p >< abbr title="World Health Organization">OMS< /abbr > é uma organização internacional de saúde.< /p ></strong>
+
+                </code>
+            </pre>
+            Como ficaria:
+            <p><abbr title="World Health Organization">OMS</abbr> é uma organização internacional de saúde.</p>
+
+        </p>
+
+</body>
+</html>
